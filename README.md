@@ -83,12 +83,5 @@ An Android application built in **Java** that enables users to stream RTSP feeds
 
 ---
 
-## 📚 Further Reading
-
-- [RTSP Protocol Overview – Wowza][3]
-- [Android ExoPlayer RTSP Support][1]
-- [GStreamer for RTSP on Android][5]
-
----
 
 **Enjoy seamless RTSP streaming, recording, and multitasking with this app!**
