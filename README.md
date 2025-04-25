@@ -7,7 +7,7 @@ An Android application built in **Java** that enables users to stream RTSP feeds
 ## 🚀 Features
 
 - 🎥 **Live RTSP Streaming** – Play video from an RTSP stream.
-- 💾 **Recording** – Save the streamed video in `.ts` format locally.
+- 💾 **Recording** – Save the streamed video in `.ts` or `.mkv` format locally.
 - 📺 **Picture-in-Picture Mode** – Continue watching the stream in a floating window.
 - ⏹️ **Stop Streaming** – Gracefully stop the playback and release resources.
 
