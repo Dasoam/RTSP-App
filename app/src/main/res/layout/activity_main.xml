@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- RTSP URL Input -->
+    <EditText
+        android:id="@+id/rtsp_url_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:hint="Enter RTSP URL"
+        android:inputType="textUri"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background"
+        android:layout_alignParentTop="true" />
+
+    <!-- Buttons: Play & Record -->
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rtsp_url_input"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/play_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play Stream"
+            android:layout_marginEnd="12dp" />
+
+        <Button
+            android:id="@+id/record_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Record" />
+    </LinearLayout>
+
+    <!-- VLC Video View -->
+    <org.videolan.libvlc.util.VLCVideoLayout
+        android:id="@+id/video_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/button_layout"
+        android:layout_above="@+id/bottom_button_layout"
+        android:layout_marginTop="16dp"
+        android:background="#000" />
+
+    <!-- PiP & Stop Buttons -->
+    <LinearLayout
+        android:id="@+id/bottom_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/stop_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop Stream"
+            android:layout_marginEnd="12dp" />
+
+        <Button
+            android:id="@+id/pip_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pop Out" />
+    </LinearLayout>
+</RelativeLayout>
